@@ -9,7 +9,7 @@ services:
     image: internal/tyk-gateway
     networks: [ proxy ]
     build: .
-    ports:
+    expose:
     - 9000:8080
     volumes:
     - ./tyk.conf.example:/opt/tyk-gateway/tyk.conf
