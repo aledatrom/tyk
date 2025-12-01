@@ -5,5 +5,5 @@ services:
     networks:
       - proxy
     expose:
-      - 6379:6379
+      - 6379
     command: redis-server --appendonly yes
