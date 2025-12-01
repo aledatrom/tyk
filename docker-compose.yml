@@ -10,7 +10,7 @@ services:
     networks: [ proxy ]
     build: .
     expose:
-    - 9000:8080
+    - 8080
     volumes:
     - ./tyk.conf.example:/opt/tyk-gateway/tyk.conf
 
